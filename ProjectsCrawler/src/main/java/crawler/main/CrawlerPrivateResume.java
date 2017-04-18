@@ -11,8 +11,9 @@ public class CrawlerPrivateResume {
     public String salary;//工资
     public String workArea;//工作地点
     public String education;//学历
-    public String age;//公司规模
+    public String age;//年龄限制
     public String recruitPeople;//招聘人数
+    public String information;//招聘分类
 
     public String getJob() {
         return job;
@@ -78,6 +79,14 @@ public class CrawlerPrivateResume {
         this.recruitPeople = recruitPeople;
     }
 
+    public String getInformation() {
+        return information;
+    }
+
+    public void setInformation(String information) {
+        this.information = information;
+    }
+
     @Override
     public String toString() {
         return "CrawlerPrivateResume{" +
@@ -89,6 +98,7 @@ public class CrawlerPrivateResume {
                 ", education='" + education + '\'' +
                 ", age='" + age + '\'' +
                 ", recruitPeople='" + recruitPeople + '\'' +
+                ", information='" + information + '\'' +
                 '}';
     }
 }

@@ -14,8 +14,9 @@ import java.io.*;
 public class CrawlerDownload {
     private Page page;
     public void runCrawler() {
+
         Crawler crawler = new Crawler();
-        Spider.create(new Crawler()).addUrl("http://beihai.ganji.com/zpdianhuaxiaoshou/").thread(5).start();
+        Spider.create(new Crawler()).addUrl("http://anshan.ganji.com/zpdianhuaxiaoshou/").thread(10).start();//http://anshan.ganji.com/zpdianhuaxiaoshou/
     }
     public static void main(String[] args){
         CrawlerDownload CD = new CrawlerDownload();

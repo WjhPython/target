@@ -11,7 +11,7 @@ public class FileSave {
     private File file;
     public void saveFile(String ss,String path){
         file = new File(path);
-        if (file.exists()){
+        if (file.exists()){//判断文件存不存在
             try {
                 file.createNewFile();
             } catch (IOException e) {
@@ -30,12 +30,13 @@ public class FileSave {
                 e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }finally{
-            try {
-                fileoutputstream.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+        }
+    }
+    public void close(){
+        try {
+            fileoutputstream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
