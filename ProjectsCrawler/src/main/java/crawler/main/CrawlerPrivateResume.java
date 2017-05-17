@@ -5,6 +5,7 @@ package crawler.main;
  * Created by Administrator on 2017/3/21.
  */
 public class CrawlerPrivateResume {
+    private String date;//信息获取时间
     public String job;//招聘工作
     public String company;//公司名字
     public String exp;//工作经验
@@ -14,6 +15,7 @@ public class CrawlerPrivateResume {
     public String age;//年龄限制
     public String recruitPeople;//招聘人数
     public String information;//招聘分类
+    public String city;//城市
 
     public String getJob() {
         return job;
@@ -87,10 +89,27 @@ public class CrawlerPrivateResume {
         this.information = information;
     }
 
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
     @Override
     public String toString() {
         return "CrawlerPrivateResume{" +
-                "job='" + job + '\'' +
+                "date='" + date + '\'' +
+                ", job='" + job + '\'' +
                 ", company='" + company + '\'' +
                 ", exp='" + exp + '\'' +
                 ", salary='" + salary + '\'' +
@@ -99,6 +118,7 @@ public class CrawlerPrivateResume {
                 ", age='" + age + '\'' +
                 ", recruitPeople='" + recruitPeople + '\'' +
                 ", information='" + information + '\'' +
+                ", city='" + city + '\'' +
                 '}';
     }
 }

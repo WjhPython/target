@@ -20,7 +20,7 @@ public class FileSaveAndRead {
             }
         }
         try {
-            fileoutputstream = new FileOutputStream(file);
+            fileoutputstream = new FileOutputStream(file,true);
             outputstreamwriter = new OutputStreamWriter(fileoutputstream,"UTF-8");
             outputstreamwriter.append(ss+'\n');
             outputstreamwriter.flush();

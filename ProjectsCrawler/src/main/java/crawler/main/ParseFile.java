@@ -17,7 +17,7 @@ public class ParseFile {
         //从文件中解析得到
         FileSaveAndRead fileReadCitys = new FileSaveAndRead();
         String citystr = null;
-        citystr = fileReadCitys.readFile("F:\\Citys.txt");
+        citystr = fileReadCitys.readFile("urlFile/Citys.txt");
         for (String str : citystr.split("/\n")
                 ) {
             str = str.substring(str.indexOf("@") + 1);
@@ -25,7 +25,7 @@ public class ParseFile {
         }
         FileSaveAndRead fileReadjob = new FileSaveAndRead();
         String jobstr = null;
-        jobstr = fileReadjob.readFile("F:\\job.txt");
+        jobstr = fileReadjob.readFile("urlFile/job.txt");
         for (String str : jobstr.split("\n")
                 ) {
             str = str.substring(str.indexOf("@") + 1);

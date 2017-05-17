@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: be.unamur.info:vibes-execution:1.1.5-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/be/unamur/info/vibes-execution/1.1.5-SNAPSHOT/vibes-execution-1.1.5-20161024.150603-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/be/unamur/info/vibes-execution/1.1.5-SNAPSHOT/vibes-execution-1.1.5-20161024.150603-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/be/unamur/info/vibes-execution/1.1.5-SNAPSHOT/vibes-execution-1.1.5-20161024.150603-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
